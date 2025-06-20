@@ -43,3 +43,15 @@ The first player, Donald, begins a turn and rolls a 5. Donald could hold and sco
 1. Make sure you have signed in already in the browser.
 1. After that you need to follow the Local Development Setup.
 1. If you need a new branch you can checkout or else you can continue working in the current branch.
+
+## FLOWCHART and PROJECT PLANS
+
+Since this project is build for sharing the experience of Building an Front End Web Application. Here, we are given a **figma** file for UI part and a Private document shared from **One Drive** to the specified members. If there is any queries regarding the documents or anything else convey that to us. We will resolve the issue.
+
+## Recommended Extensions for Development
+
+1. Prettierrc - Code Formatting
+1. ESLint - Code Linting or Errors Warning
+1. Live Preview - Live reloading of our Site under **localhost:3000**
+1. Chrome | MSEdge | Brave - Any Modern Web Browser
+1. Developer Tools and Debugging Tool
