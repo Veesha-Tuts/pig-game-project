@@ -1,0 +1,7 @@
+# Node Packages
+node_modules
+package-lock.json
+
+# Config Files
+.prettierrc
+eslint.config.js
