@@ -1,0 +1,6 @@
+[user]
+    name = Your_User_Name_Here
+    email = Your_User_Email_Here
+
+[core]
+    editor = code --wait

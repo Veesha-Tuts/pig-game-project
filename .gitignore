@@ -3,6 +3,6 @@ node_modules
 package-lock.json
 
 # Config Files
-.gitconfig
+# .gitconfig
 .prettierrc
 eslint.config.js
