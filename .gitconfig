@@ -1,6 +1,6 @@
 [user]
-    name = Logesh
-    email = tutorials.veeshatech@hotmail.com
+    name=Logesh
+    email=tutorials.veeshatech@hotmail.com
 
 [core]
     editor = code --wait
