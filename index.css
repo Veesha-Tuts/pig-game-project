@@ -7,14 +7,15 @@
 }
 
 :root {
-  --background: rgb(29, 26, 26);
+  /* Colors */
+  --white: #edf2f6;
+  --black: #494953;
+  --lgt-red: #ff5656;
+  --drk-red: #b42b3f;
+  --gray-blue: #8ab2ff;
 }
 
 html {
   font-size: 16px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-  background-color: var(--background);
+  font-family: "Segoe UI", sans-serif;
 }
