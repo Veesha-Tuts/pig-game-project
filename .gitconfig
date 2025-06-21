@@ -1,8 +1,8 @@
 [user]
-    name=Logesh
-    email=tutorials.veeshatech@hotmail.com
+    name = Your Name Here
+    email = Your Email Here
 
 [core]
     editor = code --wait
     # For SSH key Command
-    sshCommand = ssh -i ~/.ssh/id_ed25519
+    sshCommand = IF using SSH Your SSH PUBLIC KEY HERE
