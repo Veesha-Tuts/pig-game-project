@@ -1,0 +1,38 @@
+.game-main-container {
+  max-width: 72rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1em;
+}
+
+.player {
+  color: var(--white);
+  background-color: var(--lgt-red);
+  font-size: 2em;
+  text-align: center;
+  padding: 3em;
+}
+
+.player-2 {
+  order: 1;
+}
+
+.player-name {
+  letter-spacing: 4px;
+  margin-bottom: 1.22em;
+}
+
+.stats-content h3 {
+  margin-bottom: 1em;
+}
+
+.current-player {
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  left: 50vw;
+  top: 0;
+  z-index: -1;
+  background-color: var(--lgt-red);
+}
