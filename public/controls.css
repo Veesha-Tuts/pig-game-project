@@ -28,7 +28,7 @@
   border-width: 3px;
   border-color: var(--white);
   text-align: center;
-  padding: 1em 2em;
+  padding: 1rem 2em;
   margin-block: 2em;
   box-shadow: 1px 2px 8px var(--black);
 }

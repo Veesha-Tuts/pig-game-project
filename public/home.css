@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 1em;
+  filter: blur(100px);
 }
 
 .player {
@@ -35,4 +36,67 @@
   top: 0;
   z-index: -1;
   background-color: var(--lgt-red);
+}
+
+.modal-winner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white);
+  background: var(--drk-red);
+  padding: 1em 3em;
+  border-radius: 1.44em;
+  box-shadow: 0 0 16px var(--black);
+
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal--controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-winner h2 {
+  margin-block: 1em;
+}
+.modal-winner button[type="button"] {
+  font-size: 24px;
+  width: 100px;
+}
+
+.modal-winner img {
+  min-width: 24px;
+  max-width: 36px;
+}
+
+.modal-controls button {
+  all: unset;
+  color: white;
+  padding: 1em;
+  text-transform: uppercase;
+  border-radius: 1em;
+  background-color: var(--black);
+  margin-block: 1em;
+}
+
+.modal-controls button.restart-game {
+  background-color: white;
+}
+
+.stars {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star:nth-of-type(2) {
+  font-size: 2.12em;
 }
