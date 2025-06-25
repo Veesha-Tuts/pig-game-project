@@ -2,6 +2,7 @@
 
 // Current Player Index
 let curPlaInd = 1;
+let nMovesOfPlayers = [0, 0];
 
 // DOM elements
 const btnRoll = document.getElementById("roll--dice");
@@ -9,6 +10,10 @@ const btnHold = document.getElementById("hold--score");
 const btnReset = document.getElementById("reset--game");
 const diceImage = document.getElementById("dice--image--element");
 const curPlayBg = document.querySelector(".current-player");
+const winnerHeading = document.getElementById("headline--winner");
+const nMoves = document.getElementById("moves--count");
+const finalScore = document.getElementById("final--score");
+const okayBtn = document.getElementById("okay--btn");
 
 btnRoll.addEventListener("click", function () {
   const curScore = document.querySelector(`#player--${curPlaInd} .current`);
@@ -31,13 +36,17 @@ btnRoll.addEventListener("click", function () {
 
 btnHold.addEventListener("click", function () {
   btnHold.textContent = "SWITCH PLAY";
+  nMovesOfPlayers[curPlaInd - 1] += 1;
   const totScore = document.querySelector(`#player--${curPlaInd} .total`);
   const curScore = document.querySelector(`#player--${curPlaInd} .current`);
   // Add the Value of Dice to the Current Score
   let val = totScore.textContent * 1;
   val += curScore.textContent * 1;
-  if (val > 25) {
-    alert(`Player ${curPlaInd} has won`);
+  if (val >= 5) {
+    document.body.classList.add("game-over");
+    winnerHeading.textContent = `Player ${curPlaInd} win!`;
+    finalScore.textContent = val + "";
+    nMoves.textContent = nMovesOfPlayers[curPlaInd - 1] + "";
   }
   totScore.textContent = val < 10 ? "0" + val : val;
   curScore.textContent = "00";
@@ -55,4 +64,14 @@ btnReset.addEventListener("click", function () {
   }
   curPlayBg.style.left = "50vw";
   curPlaInd = 1;
+  const srcUrl = `./media/dice-6.png`;
+  diceImage.setAttribute("src", srcUrl);
+  btnHold.removeAttribute("disabled");
+  btnRoll.removeAttribute("disabled");
+});
+
+okayBtn.addEventListener("click", function () {
+  document.body.classList.remove("game-over");
+  btnHold.setAttribute("disabled", true);
+  btnRoll.setAttribute("disabled", true);
 });

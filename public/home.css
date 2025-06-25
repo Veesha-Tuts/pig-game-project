@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 1em;
-  filter: blur(100px);
+  filter: blur(0px);
 }
 
 .player {
@@ -39,6 +39,7 @@
 }
 
 .modal-winner {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -48,9 +49,7 @@
   padding: 1em 3em;
   border-radius: 1.44em;
   box-shadow: 0 0 16px var(--black);
-
   font-size: 36px;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -58,7 +57,7 @@
 }
 
 .modal--controls {
-  display: flex;
+  display: inherit;
   align-items: center;
   justify-content: center;
 }
@@ -99,4 +98,13 @@
 
 .star:nth-of-type(2) {
   font-size: 2.12em;
+}
+
+.game-over .modal-winner {
+  display: flex;
+}
+
+.game-over .game-main-container,
+.game-over .current-player {
+  filter: blur(55px);
 }
