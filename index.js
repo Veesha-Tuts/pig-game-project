@@ -3,6 +3,7 @@
 // Current Player Index
 let curPlaInd = 1;
 let nMovesOfPlayers = [0, 0];
+let winningScore = 100;
 
 // DOM elements
 const btnRoll = document.getElementById("roll--dice");
@@ -42,7 +43,7 @@ btnHold.addEventListener("click", function () {
   // Add the Value of Dice to the Current Score
   let val = totScore.textContent * 1;
   val += curScore.textContent * 1;
-  if (val >= 5) {
+  if (val >= winningScore) {
     document.body.classList.add("game-over");
     winnerHeading.textContent = `Player ${curPlaInd} win!`;
     finalScore.textContent = val + "";
